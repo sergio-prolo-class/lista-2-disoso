@@ -10,3 +10,6 @@ build
 
 # Ignore vscode configs
 .vscode
+
+# Ignorar os arquivos .jar, menos o que criamos
+!app/libs/algs4.jar
