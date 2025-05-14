@@ -15,9 +15,8 @@ public class App {
     }
 
     public static void main(String[] args) {
-    // Criando um objeto App (conforme lista)
         App aplicativo = new App(); 
-    // Mostrando a janela criada
+        Grade grade = new Grade(100,100);
         aplicativo.tela.show(); 
     }
 }
