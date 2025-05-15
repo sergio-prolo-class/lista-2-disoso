@@ -1,4 +1,4 @@
-package org.example;
+package ads.poo;
 
 import edu.princeton.cs.algs4.Draw;
 import java.awt.*;

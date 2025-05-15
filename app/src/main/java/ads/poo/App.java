@@ -19,7 +19,7 @@ public class App {
 
     public static void main(String[] args) {
         App aplicativo = new App();
-        org.example.Grade grade = new org.example.Grade(100,100);
+        ads.poo.Grade grade = new ads.poo.Grade(100,100);
         aplicativo.tela.show();
     }
 }
