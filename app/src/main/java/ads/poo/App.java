@@ -1,6 +1,7 @@
 package ads.poo;
 
 import edu.princeton.cs.algs4.Draw;
+import javax.swing.JFrame;
 
 public class App {
     // Adicionando tela, objeto que vamos usar para desenhar
@@ -14,7 +15,7 @@ public class App {
         tela.setXscale(0, 1000);
         // Definindo a escala do eixo Y da janela (conforme lista)
         tela.setYscale(0, 600);
-        tela.setDefaultCloseOperation(Draw.EXIT_ON_CLOSE);
+        tela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 
