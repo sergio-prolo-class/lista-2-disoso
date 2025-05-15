@@ -1,7 +1,6 @@
 package ads.poo;
 
 import edu.princeton.cs.algs4.Draw;
-import org.example.Grade;
 
 public class Grade {
     private final int x, y;
