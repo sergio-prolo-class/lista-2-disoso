@@ -17,7 +17,7 @@ repositories {
 
 dependencies {
 
-    implementation files('lista-2-disoso.app.libs.algs4.jar')
+    implementation files('libs/algs4.jar')
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
 
