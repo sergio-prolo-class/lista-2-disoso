@@ -14,13 +14,14 @@ public class App {
         tela.setXscale(0, 1000);
         // Definindo a escala do eixo Y da janela (conforme lista)
         tela.setYscale(0, 600);
+        tela.setDefaultCloseOperation(Draw.EXIT_ON_CLOSE);
     }
 
 
     public static void main(String[] args) {
         App aplicativo = new App();
         ads.poo.Grade grade = new ads.poo.Grade(100,100);
-        aplicativo.tela.show();
+        aplicativo.tela.setVisible(true);
     }
 }
 
