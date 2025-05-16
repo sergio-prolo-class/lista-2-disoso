@@ -23,11 +23,25 @@ public class App {
         App aplicativo = new App();
 
         ads.poo.Grade grade = new ads.poo.Grade(100,100);
+        ads.poo.Grade gradeB = new ads.poo.Grade(550,100);
 
-        ads.poo.Navio navio = new Navio(4, 5, 3, grade, true);
+        ads.poo.Navio navio = new Navio(0, 0, 4, grade, false);
         navio.desenhar(aplicativo.tela);
 
+        ads.poo.Navio navioB = new Navio(5, 1, 3, grade, true);
+        navioB.desenhar(aplicativo.tela);
+
+        ads.poo.Navio navioC = new Navio(3, 2, 5, grade, true);
+        navioC.desenhar(aplicativo.tela);
+
+        ads.poo.Navio navioD = new Navio(7, 5, 3, grade, true);
+        navioD.desenhar(aplicativo.tela);
+
+        ads.poo.Navio navioE = new Navio(1, 8, 2, grade, false);
+        navioE.desenhar(aplicativo.tela);
+
         grade.desenhar(aplicativo.tela);
+        gradeB.desenhar(aplicativo.tela);
         aplicativo.tela.show();
 
     }

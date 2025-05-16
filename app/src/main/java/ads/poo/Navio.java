@@ -22,22 +22,20 @@ public class Navio {
     }
     public void desenhar(Draw tela) {
         Color c = Color.pink;
-        int inicioX = grade.getX();
-        int inicioy = grade.getY();
         int tamanhoCelula = grade.getCelula();
 
-        for(int i = 0; i <= tamanho; i++){
+        for(int i = 0; i < tamanho; i++){
             int x2;
             int y2;
 
             if(vertical){
                 x2 = x;
-                y2 = y+ i;
+                y2 = y + i;
             }else{
-                x2 = x+ i;
+                x2 = x + i;
                 y2 = y;
-
             }
+
             double xfinal = grade.getX() + x2 * tamanhoCelula + tamanhoCelula / 2.0;
             double yfinal = grade.getY() + y2 * tamanhoCelula + tamanhoCelula / 2.0;
 

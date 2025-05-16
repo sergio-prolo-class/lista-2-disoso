@@ -28,9 +28,10 @@ public class Grade {
 
 
         // Criando os rotulos da grade (conforme lista)
+        tela.setPenColor(Color.pink);
         for (int i = 0; i < 10; i++) {
-            tela.text(x + i * celula + celula/2, y - 15, "" + (char)('A' + i));
-            tela.text(x - 15, y + i * celula + celula/2, "" + (i + 1));
+            tela.text(x + i * celula + celula/2, y - 15, "" + (i));
+            tela.text(x - 15, y + i * celula + celula/2, "" + (char)('A' + i));
         }
 
 
