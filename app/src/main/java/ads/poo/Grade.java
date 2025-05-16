@@ -2,29 +2,52 @@ package ads.poo;
 
 import edu.princeton.cs.algs4.Draw;
 
-public class Grade {
-    private int linhas;
-    private int colunas;
-    private Draw tela;
+import java.awt.*;
 
-    public Grade(Draw tela, int linhas, int colunas) {
-        this.tela = tela;
-        this.linhas = linhas;
-        this.colunas = colunas;
+public class Grade {
+    private final int x, y;
+    //Dimensão de cada celula de grade (conforme lista)
+    private final int celula = 40;
+
+
+    public Grade(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 
-    public void desenhar() {
-        int espacoX = 1000 / colunas;
-        int espacoY = 600 / linhas;
 
-        for (int i = 0; i <= colunas; i++) {
-            int x = i * espacoX;
-            tela.line(x, 0, x, 600);
+    public void desenhar(Draw tela) {
+        // Desenhando as linhas da grade
+        tela.setPenColor(Color.black);
+        for (int i = 0; i <= 10; i++) {
+            // Criando linhas verticais
+            tela.line(x + i * celula, y, x + i * celula, y + 10 * celula);
+            // Criando linhas verticais horizontais
+            tela.line(x, y + i * celula, x + 10 * celula, y + i * celula);
         }
 
-        for (int j = 0; j <= linhas; j++) {
-            int y = j * espacoY;
-            tela.line(0, y, 1000, y);
+
+        // Criando os rotulos da grade (conforme lista)
+        for (int i = 0; i < 10; i++) {
+            tela.text(x + i * celula + celula/2, y - 15, "" + (char)('A' + i));
+            tela.text(x - 15, y + i * celula + celula/2, "" + (i + 1));
         }
+
+
+    }
+
+
+    public int getX() {
+        return x;
+    }
+
+
+    public int getY() {
+        return y;
+    }
+
+
+    public int getCelula() {
+        return celula;
     }
 }
